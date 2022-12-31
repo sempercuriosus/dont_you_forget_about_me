@@ -21,7 +21,7 @@ def SendEmail(image_location):
     _port_tls = 587
     _ssl_port = 465
     _use_tls_ssl = True
-    #email detials
+    #email details
     _to_email = ''
     _bcc = ''
     _from_email = '' 
