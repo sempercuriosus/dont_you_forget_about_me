@@ -88,7 +88,7 @@ def GetImage(image_source):
             except:
                 print("could not join image source and image name")
         except:
-            print("cold not list images in the path provided")
+            print("could not list images in the path provided")
 
     else:
         print(f"the path {image_source} does not exist.") 
