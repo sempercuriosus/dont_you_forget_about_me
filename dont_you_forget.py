@@ -1,10 +1,31 @@
-import os
-import smtplib
-import random
-from email import encoders
-from email.mime.base import MIMEBase
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
+try:
+    import os
+except:
+    print('Could not import requirement: os')
+try:
+    import smtplib
+except:
+    print('Could not import requirement: smtplib')
+try:
+    import random
+except:
+    print('Could not import requirement: random')
+try:
+    from email import encoders
+except:
+    print('Could not import requirement: encoders')
+try:
+    from email.mime.base import MIMEBase
+except:
+    print('Could not import requirement: MIMEBase')
+try:
+    from email.mime.multipart import MIMEMultipart
+except:
+    print('Could not import requirement: MIMEMultipart')
+try:
+    from email.mime.text import MIMEText
+except:
+    print('Could not import requirement: MIMEText')
 
 def __main__():
     #image settings
@@ -45,13 +66,13 @@ def SendEmail(image_location):
             _mime_base.set_payload(_attachement.read())
         
         encoders.encode_base64(_mime_base)
+        _mime_base.add_header("Content-Disposition", f"attachment; filename={_image_to_attach}")
+        _message.attach(_mime_base)
 
     except Exception as _mime_base_error:
         print("There was an error in the mime-base")
         print(str(_mime_base_error))
     
-    _mime_base.add_header("Content-Disposition", f"attachment; filename={_image_to_attach}")
-    _message.attach(_mime_base)
 
     try:
         with smtplib.SMTP('smtp.gmail.com', _port_tls) as _email_server:
