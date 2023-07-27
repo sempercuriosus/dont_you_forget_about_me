@@ -17,7 +17,7 @@ Because this project was just for me I did not do any extensive amount of defens
 This app will get, from a directory, a random image, attach it to an email, and send the email to a pre-configured recipient.
 
 ### Built With
----
+
 Python! Because I wanted to learn some more about the language. I have enjoyed it so far. 
 
 ## Getting Started
