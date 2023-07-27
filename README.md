@@ -42,7 +42,7 @@ Because there are not any external resources one may simply clone the repo.
 
 ### Usage
 
-**Set Up**
+#### Set Up
 Because this was sanitized previously there are a few set up items needed: 
   1. _image_location - I used a directory with several images in them to randomly select one
   2. _to_email - we need a recipient
@@ -52,7 +52,7 @@ Because this was sanitized previously there are a few set up items needed:
   6. _subject - pick a title!
   7. _message_body - I added a note in my messages
 
-**Running**
+#### Running
 This is not the most user friendly approach here, but again it was just a fun and get it done quick project. That said, when the python3 file is configured this will run as any other command line item with python by calling it. The command below is assuming you opened the terminal window in parent directory, otherwise the full file path will be needed.
 
 `python3 dont_you_forget.py`
