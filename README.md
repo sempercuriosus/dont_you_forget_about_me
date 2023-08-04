@@ -22,7 +22,7 @@ Python! Because I wanted to learn some more about the language. I have enjoyed i
 
 ## Getting Started
 
-### Packages
+### External Libraries
 I honestly do not recall what I needed to install, however, I just wanted to note what is used. 
 
 Here are the packages that are used by the application
@@ -44,13 +44,13 @@ Because there are not any external resources one may simply clone the repo.
 
 #### Set Up
 Because this was sanitized previously there are a few set up items needed: 
-  1. _image_location - I used a directory with several images in them to randomly select one
-  2. _to_email - we need a recipient
-  3. _bcc - another one, perhaps? This was to send to myself during testing
-  4. _from_email - where is this being sent from?
-  5. _password = '' - I used an App Specific Password for this because I have 2FA on my account
-  6. _subject - pick a title!
-  7. _message_body - I added a note in my messages
+  1. `_image_location` - I used a directory with several images in them to randomly select one
+  2. `_to_email` - we need a recipient
+  3. `_bcc` - another one, perhaps? This was to send to myself during testing
+  4. `_from_email` - where is this being sent from?
+  5. `_password` = '' - I used an App Specific Password for this because I have 2FA on my account
+  6. `_subject` - pick a title!
+  7. `_message_body` - I added a note in my messages
 
 #### Running
 This is not the most user friendly approach here, but again it was just a fun and get it done quick project. That said, when the python3 file is configured this will run as any other command line item with python by calling it. The command below is assuming you opened the terminal window in parent directory, otherwise the full file path will be needed.
